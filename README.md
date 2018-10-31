@@ -14,5 +14,22 @@ Notice that you will need to get an api key from mapquest, and find out which ma
 
 an initial solution, with room for improvement, is here: https://github.com/fabiounitn/apis/tree/master/cities
 
+## test a service
+
+Implement a method that has in input an object with four fields: 
+- url, a string 
+- http_method, a string with values from (GET POST PUT or DELETE), 
+- payload, an object to be sent in case of post or put , and 
+- expectedResultStatus (a number)
+
+Your method will call the url with the specified http_method and payload, and checks if the expected result http status code is equal to expectedResult.
+If so, it returns true to the caller, if not it returns false
+
+Publish this method in an heroku app and try it out
+
+## test the service that tests a service
+Take the service described above, and write a jest module that tests it
+
+
 
 
